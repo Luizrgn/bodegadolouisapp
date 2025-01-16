@@ -1,0 +1,20 @@
+/* Variáveis de Estilo */
+:root {
+    /* Cores */
+    --cor-primaria: #F3AA1B; /* Amarelo ouro */
+    --cor-secundaria: #102E49; /* Azul marinho */
+   /* --cor-secundaria: #333; /* Cinza escuro */
+    --cor-fundo: #f5f5f5; /* Fundo claro */
+    --cor-fundo-escuro: #233B56; /* Fundo claro */
+    --cor-texto: #FFFFFF; /* Texto branco */
+    --cor-hover: #ff9900; /* Cor no hover */
+
+    /* Fontes */
+    --fonte-principal: 'IndieFlower', sans-serif;
+    --fonte-titulo: 'Cockie', serif;
+
+    /* Espaçamento */
+    --espacamento-pequeno: 8px;
+    --espacamento-medio: 16px;
+    --espacamento-grande: 24px;
+}

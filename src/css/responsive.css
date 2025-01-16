@@ -1,0 +1,49 @@
+/* Responsividade para telas médias (tablets e celulares maiores) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ajusta a largura */
+    }
+
+    nav {
+        text-align: center; /* Centraliza o menu */
+        padding: 0 10px; /* Adiciona espaçamento */
+    }
+
+    .menu-inicial ul {
+        flex-direction: column; /* Itens do menu em coluna */
+    }
+
+    .menu-inicial ul li {
+        margin-bottom: var(--espacamento-medio); /* Espaço entre itens */
+    }
+
+    .menu-inicial ul li a {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        padding: var(--espacamento-pequeno) var(--espacamento-medio); /* Ajusta espaçamento */
+        width: 100%; /* Garante que o link ocupe toda a largura */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Logo responsivo */
+    .logo img {
+        width: 40%; /* Ajusta tamanho do logo */
+        max-width: 250px;
+        margin-left: -5px;
+        margin: 0 auto; /* Centraliza a logo */
+    }
+}
+
+/* Responsividade para telas pequenas (celulares em modo retrato) 
+@media (max-width: 480px) {
+    .menu-inicial ul li a {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte 
+        padding: var(--espacamento-pequeno); /* Espaçamento compacto 
+    }
+
+    .logo img {
+        width: 40%; /* Ajusta o tamanho do logo 
+        max-width: 200px;
+        
+    }
+}*/
+

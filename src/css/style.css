@@ -1,0 +1,71 @@
+body{
+    background-color: var(--cor-fundo-escuro);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--espacamento-grande);
+}
+
+.logo img{
+    margin-left: -5px;
+    width: 150px;
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: var(--espacamento-medio);
+    text-align: center;
+}
+
+/* Menu */
+.menu-inicial {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    width: 100%;
+    margin-top: var(--espacamento-medio); /* Ajusta o espaço acima do menu */
+}
+
+.menu-inicial ul {
+    display: flex;
+    flex-direction: column; /* Faz os itens ficarem na vertical */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-inicial ul li {
+    margin:  var(--espacamento-pequeno); /* Espaçamento entre os itens */
+}
+
+.menu-inicial ul li a {
+    text-decoration: none;
+    color: var(--cor-texto); /* Cor do texto */
+    font-family: var(--fonte-decorativa); /* Fonte decorativa */
+    font-size: 18px;
+    font-weight: bold;
+    padding: var(--espacamento-pequeno) var(--espacamento-medio);
+    display: block; /* Faz o link ocupar toda a área do item */
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: color 0.3s, background-color 0.3s;
+    background-color: var(--cor-primaria);
+}
+
+/* Efeito hover */
+.menu-inicial ul li a:hover {
+    color: var(--cor-hover);
+    background-color: var(--cor-secundaria);
+    
+}
+
+
