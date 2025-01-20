@@ -15,7 +15,7 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -69,3 +69,174 @@ body{
 }
 
 
+/* pagina menu!!!*/
+
+
+.menu-container {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto);
+    min-height: 100vh; /* Para cobrir toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    
+}
+
+.cardapio ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.cardapio ul li {
+    margin: 8px 0; /* Espaçamento entre os itens */
+    padding: 5px; /* Espaçamento entre border-bottom e textos */
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.cardapio ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: var(--cor-texto); /* Usa a variável de cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardapio ul li a:hover {
+    color: var(--cor-destaque); /* Adiciona uma cor de destaque ao passar o mouse */
+}
+
+
+/*pagina lanches*/
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+.produto {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.produto-imagem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.produto-detalhes {
+    flex: 1;
+}
+
+.produto-detalhes h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: brown;
+}
+
+.produto-detalhes p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: brown;
+}
+
+.preco {
+    font-size: 16px;
+    color: var(--cor-destaque);
+    margin: 10px 0;
+    color: blueviolet;
+}
+
+.adicionar-carrinho {
+    padding: 8px 16px;
+    background-color: var(--cor-destaque);
+    color: rgb(8, 212, 97);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.adicionar-carrinho:hover {
+    background-color: var(--cor-destaque-escuro);
+}
+
+
+/* Página de promoções */
+
+
+.promocoes-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--espacamento-medio);
+    text-align: center;
+}
+
+/* Estilo do título da promoção */
+.promocoes-container h2 {
+    font-family: var(--fonte-decorativa);
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+/* Estilo do campo de edição de texto */
+#promocao-texto {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--fonte-decorativa);
+    padding: 15px;
+    resize: none; /* Desativa o redimensionamento manual */
+    overflow-y: hidden; /* Adiciona a rolagem vertical */
+    line-height: 1.6;
+    color: var(--cor-fundo-escuro);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#promocao-texto::placeholder {
+    color: var(--cor-primaria); /* Cor do placeholder */
+    font-style: italic;
+}
+
+#promocao-texto:focus {
+    border-color: var(--cor-primaria); /* Muda a cor da borda quando o campo é focado */
+    outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .promocoes-container h2 {
+        font-size: 28px;
+    }
+
+    #promocao-texto {
+        font-size: 16px;
+        height: 200px;
+    }
+}
